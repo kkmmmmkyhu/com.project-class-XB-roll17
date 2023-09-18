@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>SignUp</title>
+<style>
+body
+{
+	background-image:url(https://d2r55xnwy6nx47.cloudfront.net/uploads/2018/01/BigBounce_2880x1220.gif);
+	/*background-image:url(https://d2r55xnwy6nx47.cloudfront.net/uploads/2018/01/BigBounce_2880x1220.gif);*/
+	background-repeat:no-repeat;
+	background-size:1364px 768px;
+}
+.sign
+{
+text-align:center;
+
+margin-top:25px;
+}
+.tab
+{
+border:1px solid black;
+padding:10px;
+background-image: black;
+
+}
+th,td
+{
+color:white;
+}
+
+.btn1
+{
+	font-size:18px;
+	font-family: Georgia, serif;
+	background-color:#FAD7A0;
+	width:49%;
+	border: 1px solid red;
+	border-radius:5px;
+}
+.btn1:hover
+{
+background-color:#77DD77;
+color:black;
+}
+
+a{
+text-decoration:none;
+}
+</style>
+</head>
+<body>
+<h1 class="sign">Welcome To SignUp Page</h1>
+<center>
+<table class="tab">
+<tr>
+<th align="right">First Name:<br><br></th><td><input type="text" size=30 placeholder="Your name" style="font-size:20px; font-family:Georgia;"><br><br></td>
+</tr>
+<tr>
+<th align="right">Last Name:<br><br></th><td><input type="text" size=30 placeholder="Your title" style="font-size:20px;font-family:Georgia;"><br><br></td>
+</tr>
+<tr>
+<th align="right">Email:<br><br></th><td><input type="text" size=30 placeholder="Valid Email" style="font-size:20px;font-family:Georgia;"><br><br></td>
+</tr>
+<tr>
+<th align="right">Password:<br><br></th><td><input type="password" placeholder="Password" size=30 style="font-size:20px;font-family:Georgia;"><br><br></td>
+</tr>
+<!--Gender-->
+<tr>
+<th align="right">Gender:<br><br></th><td><input type="radio" id="male" name="gender" value="Male">
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label>
+<br><br></td>
+</tr>
+
+<!--Grade-->
+<tr>
+<th align="right">Grade:<br><br></th><td><input type="checkbox" id="gr" name="gr" value="Grade">
+<label for="grade" >8th</label>
+<input type="checkbox" id="gr" name="gr" value="Grade">
+<label for="grade">9th</label>
+<input type="checkbox" id="gr" name="gr" value="Grade">
+<label for="grade">10th</label>
+<br><br></td>
+</tr>
+
+<!--Section-->
+<tr>
+<th align="right">Section:</th><td><input type="radio" id="section" name="section" value="section">
+<label for="section">A</label>
+<input type="radio" id="section" name="section" value="section">
+<label for="section">B</label>
+</td>
+</tr>
+<!--City-->
+<tr>
+<th align="right">City:<br><br></th>
+<td>
+<select name="city" id="city" style="font-size:20px;font-family:Georgia;width:330px;">
+  <option value="Select City">Select City</option>
+  <option value="Patna">Patna</option>
+  <option value="Ranchi">Ranchi</option>
+  <option value="Jamshedpur">Jamshedpur</option>
+  <option value="Mumbai">Mumbai</option>
+</select>
+<br><br>
+</td>
+</tr>
+<tr><td></td>
+<td>
+<a href="login.html">
+<button type="button" class="btn1" onclick="myFunction()">Register</a>
+</button>
+<a href="index.html">
+<button type="button" class="btn1">Cancel</a>
+</button>
+</td>
+</tr>
+</table>
+</center>
+<br><br><br><br><br><br><br>
+<p align="right"><a href="index.html">Back</a>
+<script>
+function myFunction() {
+  alert("You are registered successfully!");
+}
+</script>
+</body>
+</html>
